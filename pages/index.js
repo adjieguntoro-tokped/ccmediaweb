@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/Script'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 import Header from '../components/header';
 import Banner from '../components/banner';
-import AboutUs from '../components/aboutUs';
+// import AboutUs from '../components/aboutUs';
 
 export default function Home() {
   return (
