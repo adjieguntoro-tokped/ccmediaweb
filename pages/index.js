@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import Script from 'next/Script'
 // import styles from '../styles/Home.module.css'
-import Header from '../components/header';
-import Banner from '../components/banner';
-import AboutUs from '../components/aboutUs';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
+import AboutUs from '../components/AboutUs';
+import OurServices from '../components/OurServices';
+import Portofolio from '../components/Portofolio';
 
 export default function Home() {
   return (
@@ -16,10 +18,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="mx-auto w-full">
+      <main>
         <Banner />
+        <AboutUs />
+        <OurServices /> 
+        <Portofolio />
       </main>
-      <AboutUs /> 
     </div>
   )
 }

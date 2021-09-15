@@ -67,6 +67,9 @@ const AboutUs = () => (
         <div className="w-full h-auto relative">
             <img className="absolute right-32 bottom-2" src="/images/ornament.png" alt="ornament" />
         </div>
+        <div className="w-full h-auto relative">
+            <img className="w-38 opacity-20 absolute left-32 bottom-2" src="/ccmedia-logo.png" alt="ccmedia" />
+        </div>
     </div>
 );
 

@@ -37,12 +37,12 @@ export default function Example() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="/ccmedia-logo.png"
+                    src="/ccmedia-logo-white.png"
                     alt="ccmedia"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto filter brightness-200 "
-                    src="/ccmedia-logo.png"
+                    src="/ccmedia-logo-white.png"
                     alt="Ccmedia"
                   />
                 </div>
