@@ -1,13 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  // { name: 'Dashboard', href: '#', current: true },
-  // { name: 'Team', href: '#', current: false },
-  // { name: 'Projects', href: '#', current: false },
-  // { name: 'Calendar', href: '#', current: false },
+  { name: 'Tentang Kami', href: '#', current: false },
+  { name: 'Services', href: '#', current: false },
+  { name: 'Portofolio', href: '#', current: false },
+  { name: 'Team', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -16,7 +17,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-transparant fixed z-40 w-full">
+    <Disclosure as="nav" className="bg-gray-900 fixed z-40 w-full">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -32,7 +33,7 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch justify-start md:justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
@@ -52,7 +53,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -74,7 +75,7 @@ export default function Example() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

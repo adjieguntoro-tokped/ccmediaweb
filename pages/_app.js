@@ -1,5 +1,5 @@
 // import 'bootstrap/dist/css/bootstrap.css';
-import 'tailwindcss/tailwind.css'
+import 'tailwindcss/tailwind.css';
 // import '../styles/style.css';
 // import '../styles/bootsnav.css';
 // import '../styles/animate.css';
