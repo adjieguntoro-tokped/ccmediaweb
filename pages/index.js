@@ -7,6 +7,9 @@ import Banner from '../components/Banner';
 import AboutUs from '../components/AboutUs';
 import OurServices from '../components/OurServices';
 import Portofolio from '../components/Portofolio';
+import OurClient from '../components/OurClient';
+import ContanctUs from '../components/ContactUs';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -23,6 +26,9 @@ export default function Home() {
         <AboutUs />
         <OurServices /> 
         <Portofolio />
+        <OurClient />
+        <ContanctUs />
+        <Footer />
       </main>
     </div>
   )
