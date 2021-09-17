@@ -59,10 +59,10 @@ export default function Example() {
                         to={item.alias} smooth duration={500} offset={-50} spy
                         key={item.name}
                         href={item.href}
-                        activeClass="bg-gray-100 text-red"
+                        activeClass="border-b-2 border-white text-white"
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current ? 'bg-gray-900 text-white' : 'text-white hover:text-gray-300',
+                          'px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                         onClick={aboutSection.onClick}

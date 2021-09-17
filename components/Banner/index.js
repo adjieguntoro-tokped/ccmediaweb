@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import './banner.module.css';
+import { Link } from 'react-scroll';
+
 
 const Banner = () => (
   <div className="relative flex items-center justify-center h-screen py-12 overflow-hidden bg-gray-900 banner-area wavesshape">
@@ -13,20 +15,20 @@ const Banner = () => (
       </p>
       <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
         <div className="rounded-md shadow">
-          <a
+          <Link to="about" smooth duration={600} offset={-50}
             href="#"
             className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 md:py-2 md:text-lg md:px-5"
           >
             Tentang Kami
-          </a>
+          </Link>
         </div>
         <div className="mt-3 sm:mt-0 sm:ml-3">
-          <a
+          <Link to="contact" smooth duration={600}
             href="#"
             className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-pink-700 bg-pink-100 hover:bg-pink-200 md:py-2 md:text-lg md:px-5"
           >
             Hubungi Kami
-          </a>
+          </Link>
         </div>
       </div>
       <div className="w-full h-auto relative">
