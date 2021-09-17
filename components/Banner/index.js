@@ -1,13 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import './banner.module.css';
 import { Link } from 'react-scroll';
+import { ArrowCircleDownIcon } from '@heroicons/react/outline';
 
 
 const Banner = () => (
   <div className="relative flex items-center justify-center h-screen py-12 overflow-hidden bg-gray-900 banner-area wavesshape">
-    <div className="sm:text-center px-6 lg:text-left relative max-w-4xl h-auto mx-auto">
+    <div className="absolute z-20 bg-gray-900 h-screen w-full bg-opacity-90"></div>
+    <div className="relative z-20 px-8 sm:text-center md:px-4 lg:text-left max-w-4xl h-auto mx-auto">
       <h1 className="text-4xl tracking-tight font-extrabold text-gray-100 sm:text-5xl md:text-6xl">
-        <span className="block xl:inline">Mau bikin Video Cinematic</span><br className="hidden md:block" />{' '}
+        <span className="block xl:inline">Mau bikin <br/> <span className="text-6xl md:text-7xl">Video Cinematic</span></span><br className="hidden md:block" />{' '}
         <span className="block text-pink-600 xl:inline">Ga Perlu MAHAL</span>
       </h1>
       <p className="mt-3 text-base text-gray-50 sm:mt-5 sm:text-lg sm:max-w-xl md:max-w-3xl md:w-full sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
@@ -35,21 +37,23 @@ const Banner = () => (
         <img className="absolute -left-72 top-1" src="/images/ornament.png" alt="ornament" />
       </div>
     </div>
-    {/* <div className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-      <img className="object-cover md:object-contain h-screen md:h-auto" src="/pexels-vlad-chețan-1529360.jpg" />
-    </div> */}
-    {/* <video
-      autoPlay
-      loop
-      muted
-      className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-    >
+    <video
+        autoPlay
+        loop
+        muted
+        poster="/the-ritz-frame-008.jpeg"
+        className="absolute bg-gray-900 object-fill -z-10 w-auto min-w-full max-h-screen max-w-none"
+      >
       <source
-        src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
+        src="/the-ritz.mp4"
         type="video/mp4"
+        className="opacity-10"
       />
       Your browser does not support the video tag.
-    </video> */}
+    </video>
+    <div className="absolute z-20 bottom-20 text-gray-300 flex items-center flex-col">
+      <ArrowCircleDownIcon className="animate-bounce text-white w-8" />
+    </div>
   </div>
 );
 
