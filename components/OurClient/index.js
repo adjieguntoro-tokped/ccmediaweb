@@ -18,6 +18,32 @@ const client = {
     "Ritz Carlton.jpg",
     "scoliosis.jpg",
     "XL Axiata.jpg"
+  ],
+  testimonies: [
+    {
+      title: 'Creative',
+      content: 'Developing the insight is at the heart of every great experience. By knowing people’s behaviors, needs and desires we can explore, design and build around them.'
+    },
+    {
+      title: 'Responsible',
+      content: 'With a global team of marketing, we are responsible in detail to bring your story to life with compelling, until the work project done.'
+    },
+    {
+      title: 'Jokes',
+      content: 'Jokes as become our core creative on developing the stories, content and other video material in details. Freedom oh thinking in our chemistry.'
+    },
+    {
+      title: 'Magic',
+      content: 'Our magic skill combine a keen business sense with knowledge of emerging technologies, which is why every company needs new perspectives to be successful.'
+    },
+    {
+      title: 'Friendly',
+      content: 'We are a friend to create meaningful & memorable experiences online that trigger real-life actions with no worries, meals and drinks are served.'
+    },
+    {
+      title: 'Flexible',
+      content: 'We are able adjusting the concept story and creative treatment based on client request in terms of budget, timeline, and any other needs.'
+    }
   ]
 }
 
@@ -42,6 +68,29 @@ const OurClient = () => (
 
       <div className="grid-cols-2 md:grid-cols-5 grid gap-8 max-w-4xl mx-auto">  
         {client.list.map(image => <Item imageUrl={image} key={image} />)}
+      </div>
+
+      <div className="w-full h-auto relative">
+        <img className="absolute left-32 top-2" src="/images/ornament.png" alt="ornament" />
+      </div>
+    </div>
+    <div className="container max-w-8xl mx-auto mt-14">
+      <div className="max-w-4xl mx-auto mb-12 text-center space-y-2 py-8">
+        <h2 className="text-3xl text-pink-600 font-bold  text-center">testimoni</h2>
+        <p className="md:text-lg text-sm text-gray-600">
+        Apa kata mereka:
+        </p>
+      </div>
+
+      <div className="grid-cols-1 md:grid-cols-3 grid gap-8 md:gap-12 max-w-4xl mx-auto pb-12">  
+        {client.testimonies.map(item => (
+          <div key={item.title} className="text-center shadow p-4 rounded-3xl">
+            <div className="font-bold text-gray-800 uppercase">
+              {item.title}
+            </div>
+            <div className="mt-3 text-sm text-gray-600 leading-tight">{item.content}</div>
+          </div>
+        ))}
       </div>
 
       <div className="w-full h-auto relative">

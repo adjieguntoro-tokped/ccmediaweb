@@ -1,11 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment } from 'react';
+// import {
+//   useScrollSection,
+// } from 'react-scroll-section';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Tentang Kami', href: '#', current: false },
+  { name: 'Tentang Kami', href: '#', current: false,  },
   { name: 'Services', href: '#', current: false },
   { name: 'Portofolio', href: '#', current: false },
   { name: 'Team', href: '#', current: false },
@@ -16,6 +19,8 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const aboutSection = {onClick: () => {}};
+
   return (
     <Disclosure as="nav" className="bg-gray-900 fixed z-40 w-full">
       {({ open }) => (
@@ -57,6 +62,7 @@ export default function Example() {
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
+                        onClick={aboutSection.onClick}
                       >
                         {item.name}
                       </a>
@@ -79,6 +85,7 @@ export default function Example() {
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
+                  onClick={aboutSection.onClick}
                 >
                   {item.name}
                 </a>

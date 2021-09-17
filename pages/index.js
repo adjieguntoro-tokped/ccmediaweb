@@ -1,5 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/image';
+// import {
+  // ScrollingProvider,
+  // useScrollSection,
+  // Section,
+// } from 'react-scroll-section';
 // import Script from 'next/Script'
 // import styles from '../styles/Home.module.css'
 import Header from '../components/Header';
@@ -22,13 +27,19 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Banner />
-        <AboutUs />
-        <OurServices /> 
-        <Portofolio />
-        <OurClient />
-        <ContanctUs />
-        <Footer />
+          <Banner />
+        {/* <ScrollingProvider> */}
+          {/* <Section id="about"> */}
+            <AboutUs />
+          {/* </Section> */}
+          {/* <Section id="about"> */}
+            <OurServices /> 
+          {/* </Section> */}
+        {/* </ScrollingProvider> */}
+          <Portofolio />
+          <OurClient />
+          <ContanctUs />
+          <Footer />
       </main>
     </div>
   )
