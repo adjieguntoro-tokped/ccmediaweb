@@ -15,7 +15,7 @@ const AboutUs = () => (
                 <h2 className="text-3xl text-gray-700 font-bold mb-4 md:mb-8 text-center">the <span className="text-pink-500 font-bold">team</span></h2>
                 <div className="z-20 px-1 md:p-8 grid grid-cols-3 gap-4">
                     <div className="space-y-2">
-                        <img src="/images/ibeng.jpg"  className="rounded-l-lg" />
+                        <img src="/images/Ibeng.jpg"  className="rounded-l-lg" />
                         <div className="text-xs text-center text-gray-500 hidden">Ibeng</div>
                     </div>
                     <div className="transform translate-y-6 space-y-2">
