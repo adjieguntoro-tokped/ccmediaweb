@@ -5,13 +5,14 @@ import { Fragment } from 'react';
 //   useScrollSection,
 // } from 'react-scroll-section';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link } from 'react-scroll';
 
 const navigation = [
-  { name: 'Tentang Kami', href: '#', current: false,  },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Portofolio', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Tentang Kami', href: '#', current: false, alias: 'about' },
+  { name: 'Layanan', href: '#', current: false, alias: 'services' },
+  { name: 'Portofolio', href: '#', current: false, alias: 'portofolio' },
+  { name: 'Hubungi Kami', href: '#', current: false, alias: 'contact' },
 ]
 
 function classNames(...classes) {
@@ -54,9 +55,11 @@ export default function Example() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
+                        to={item.alias} smooth duration={500} offset={-50} spy
                         key={item.name}
                         href={item.href}
+                        activeClass="bg-gray-100 text-red"
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -64,8 +67,8 @@ export default function Example() {
                         aria-current={item.current ? 'page' : undefined}
                         onClick={aboutSection.onClick}
                       >
-                        {item.name}
-                      </a>
+                          {item.name}
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -77,7 +80,8 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <a
+                <Link
+                to={item.alias} smooth duration={500} offset={-50} spy
                   key={item.name}
                   href={item.href}
                   className={classNames(
@@ -88,7 +92,7 @@ export default function Example() {
                   onClick={aboutSection.onClick}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
