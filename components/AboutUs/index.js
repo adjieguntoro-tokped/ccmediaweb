@@ -22,7 +22,7 @@ const AboutUs = () => (
                     </div>
                     <div className="space-y-2">
                         <img src="/images/Ibeng.jpg" className="transform scale-100"/>
-                        <div className="text-xs text-center text-gray-500"> <span className="font-bold">Ibeng</span></div>
+                        <div className="text-xs text-center text-gray-500"> <span className="font-bold">Arief Cahyadi</span> <br/>Manager Executive</div>
                     </div>
                     <div className="space-y-2">
                     <img src="/images/Ifan 2.jpg" className="transform scale-90"  />
