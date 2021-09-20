@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 // import 'bootstrap/dist/css/bootstrap.css';
 import 'tailwindcss/tailwind.css';
 // import '../styles/style.css';
@@ -13,7 +15,10 @@ import 'tailwindcss/tailwind.css';
 
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useEffect(() => {
+      TagManager.initialize({ gtmId: 'GTM-TWS6XC8' });
+  }, []);
+  return <Component {...pageProps}/>
 }
 
 export default MyApp
