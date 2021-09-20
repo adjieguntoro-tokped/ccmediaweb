@@ -1,5 +1,6 @@
 import { LocationMarkerIcon, MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import { useState } from "react";
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -11,8 +12,8 @@ const Form = () => {
 
     return (
         // <form>
-            <div className="shadow overflow-hidden sm:rounded-md">
-            <div className="px-4 py-5 bg-gray-700 sm:p-6">
+            <div className="overflow-hidden">
+            <div className="px-4 py-5 bg-gray-800 sm:p-6">
                 <div className="grid grid-cols-1 gap-6">
                     <div className="col-span-6 sm:col-span-3">
                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-100">
@@ -43,7 +44,7 @@ const Form = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-4 py-3 bg-gray-700 text-right sm:px-6" onClick={handleClickSubmit}>
+            <div className="px-4 py-3 bg-gray-800 text-right sm:px-6" onClick={handleClickSubmit}>
                 <button
                 type="submit"
                 className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
@@ -61,29 +62,43 @@ const ContanctUs = () => (
         <div className="container max-w-4xl mx-auto">
             {/* <div className="row"> */}
                 <div className="text-gray-300 pb-8">
-                    <h2 className="text-3xl text-gray-100 font-bold mb-8 text-left">hubungi kami <span className="text-pink-500 font-bold">sekarang</span></h2>
+                    <h2 className="text-3xl text-gray-100 font-bold mb-8 text-center">hubungi kami <span className="text-pink-500 font-bold">sekarang</span></h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Form />
                         <div>
-                            <div className="flex gap-2 jsutify-start">
-                                <PhoneIcon className="w-6 md:w-8 text-pink-500" />
-                                <span className="my-4 text-xs md:text-sm">
-                                    +62 8527 4793033
-                                </span>
+                            <div>
+                                <div className="flex gap-2 jsutify-start">
+                                    <PhoneIcon className="w-6 md:w-8 text-gray-100" />
+                                    <span className="my-4 text-xs md:text-sm">
+                                        +62 8527 4793033
+                                    </span>
+                                </div>
+                                <div className="flex gap-2 jsutify-start">
+                                    <LocationMarkerIcon className="w-9 text-gray-100" />
+                                    <span className="my-4 text-xs md:text-sm">
+                                        Paradise Serpong City, Adventure Balmoral Blok J20/55, Tangerang Selatan
+                                    </span>
+                                </div>
+                                <div className="flex gap-2 jsutify-start">
+                                    <MailIcon className="w-6 md:w-8 text-gray-100" />
+                                    <span className="my-4 text-xs md:text-sm">
+                                        ccmedia5520@gmail.com
+                                    </span>
+                                </div>
                             </div>
-                            <div className="flex gap-2 jsutify-start">
-                                <LocationMarkerIcon className="w-9 text-pink-500" />
-                                <span className="my-4 text-xs md:text-sm">
-                                    Paradise Serpong City, Adventure Balmoral Blok J20/55, Tangerang Selatan
-                                </span>
-                            </div>
-                            <div className="flex gap-2 jsutify-start">
-                                <MailIcon className="w-6 md:w-8 text-pink-500" />
-                                <span className="my-4 text-xs md:text-sm">
-                                    ccmedia5520@gmail.com
-                                </span>
+                            <div className="space-y-2">
+                                <div>Follow Us:</div>
+                                <a href="https://instagram.com/ccmedia.id" className="cursor-pointer hover:text-white flex items-center gap-1">
+                                    <FaInstagram className="text-xl"/>
+                                    <span className="text-sm">@ccmedia.id</span>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCCp9smeI_3nknV5vA11C3nw" className="cursor-pointer hover:text-white flex items-center gap-1">
+                                    <FaYoutube className="text-xl"/>
+                                    <span className="text-sm">CC Media</span>
+                                </a>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
         </div>

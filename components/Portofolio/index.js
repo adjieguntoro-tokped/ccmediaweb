@@ -5,6 +5,7 @@ import { Dialog, Transition } from '@headlessui/react';
 
 const portofolioData = {
   videos: [
+    "kZK8h-FlEUM",
     "F9qLbXYmY-Q",
     "00Xjt19k3X8",
     "yOhYjpfQcwQ",
@@ -28,8 +29,8 @@ const Item = ({ videoId }) => {
     <>
       <div onClick={openModal} className="rounded-lg bg-white shadow relative cursor-pointer">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="bg-pink-50 shadow w-12 h-12 mb-4 flex justify-center rounded-full text-center mx-auto border border-pink-400 border-2">
-            <PlayIcon className="w-14 hover:text-pink-600 text-pink-500" />
+          <div className="bg-pink-50 shadow w-12 h-12 mb-4 flex justify-center rounded-full text-center mx-auto ">
+            <PlayIcon className="w-14 hover:text-gray-600 text-gray-900" />
           </div>
         </div>
         <img alt="video portofolio" className="rounded-lg object-fill" src={`http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`} />
@@ -70,8 +71,8 @@ const Item = ({ videoId }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="relative max-w-full w-full h-full inline-block md:p-16 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-xl">
-                <iframe className="top-0 left-0 w-full h-full " src={`https://www.youtube.com/embed/${videoId}?controls=0`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <div className="relative px-4 max-w-4xl w-full h-full inline-block overflow-hidden align-middle transition-all transform shadow-xl">
+                <iframe className="w-full" src={`https://www.youtube.com/embed/${videoId}?controls=0`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </Transition.Child>
           </div>

@@ -42,12 +42,12 @@ export default function Example() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch justify-start md:justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
+                    className="block lg:hidden h-12 w-auto"
                     src="/ccmedia-logo-white.png"
                     alt="ccmedia"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto filter brightness-200 "
+                    className="hidden lg:block h-12 w-auto filter brightness-200 "
                     src="/ccmedia-logo-white.png"
                     alt="Ccmedia"
                   />

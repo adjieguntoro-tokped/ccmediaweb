@@ -15,16 +15,18 @@ const AboutUs = () => (
                 <h2 className="text-3xl text-gray-700 font-bold mb-4 md:mb-8 text-center">the <span className="text-pink-500 font-bold">team</span></h2>
                 <div className="z-20 px-1 md:p-8 grid grid-cols-3 gap-4">
                     <div className="space-y-2">
-                        <img src="/images/Ibeng.jpg"  className="rounded-l-lg" />
-                        <div className="text-xs text-center text-gray-500 hidden">Ibeng</div>
-                    </div>
-                    <div className="transform translate-y-6 space-y-2">
-                        <img src="/images/Rama.jpg"  />
-                        <div className="text-xs text-center text-gray-500 hidden">Rama</div>
+                        <img src="/images/Rama.jpg" className="transform scale-90"  />
+                        <div className="text-xs text-center text-gray-500">
+                            <span className="font-bold">Rama Kharisma </span> <br/> Video Editor
+                        </div>
                     </div>
                     <div className="space-y-2">
-                    <img src="/images/Ifan 2.jpg" className="rounded-r-lg " />
-                    <div className="text-xs text-center text-gray-500 hidden">Ifan</div>
+                        <img src="/images/Ibeng.jpg" className="transform scale-100"/>
+                        <div className="text-xs text-center text-gray-500"> <span className="font-bold">Ibeng</span></div>
+                    </div>
+                    <div className="space-y-2">
+                    <img src="/images/Ifan 2.jpg" className="transform scale-90"  />
+                    <div className="text-xs text-center text-gray-500 "> <span className="font-bold">Ichfan </span><br/> Music Aranger</div>
                 </div>
             </div>
       
@@ -33,9 +35,9 @@ const AboutUs = () => (
         <div className="w-full h-auto relative hidden md:block">
             <img className="absolute right-32 bottom-2" src="/images/ornament.png" alt="ornament" />
         </div>
-        <div className="w-full h-auto relative">
+        {/* <div className="w-full h-auto relative">
             <img className="sm:w-8 md:w-38 opacity-20 absolute md:left-32 bottom-2" src="/ccmedia-logo.png" alt="ccmedia" />
-        </div>
+        </div> */}
     </div>
 );
 

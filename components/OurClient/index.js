@@ -17,7 +17,8 @@ const client = {
     "Marina.jpg",
     "Ritz Carlton.jpg",
     "scoliosis.jpg",
-    "XL Axiata.jpg"
+    "XL Axiata.jpg",
+    "Lion Bouquet.jpg"
   ],
   testimonies: [
     {
@@ -66,7 +67,7 @@ const OurClient = () => (
         </p>
       </div>
 
-      <div className="grid-cols-2 md:grid-cols-5 grid gap-8 max-w-4xl mx-auto">  
+      <div className="grid-cols-3 md:grid-cols-5 grid gap-8 max-w-4xl mx-auto">  
         {client.list.map(image => <Item imageUrl={image} key={image} />)}
       </div>
 
