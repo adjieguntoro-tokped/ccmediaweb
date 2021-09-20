@@ -71,8 +71,8 @@ const Item = ({ videoId }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="relative px-4 max-w-4xl w-full h-full inline-block overflow-hidden align-middle transition-all transform shadow-xl">
-                <iframe className="w-full" src={`https://www.youtube.com/embed/${videoId}?controls=0`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <div className="relative max-w-4xl w-full h-full inline-block overflow-hidden align-middle transition-all transform shadow-xl">
+                <iframe width="640" height="420" className="w-full " src={`https://www.youtube.com/embed/${videoId}?controls=0`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </Transition.Child>
           </div>

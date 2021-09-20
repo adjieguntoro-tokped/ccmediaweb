@@ -76,20 +76,20 @@ const OurClient = () => (
       </div>
     </div>
     <div className="container max-w-8xl mx-auto mt-14">
-      <div className="max-w-4xl mx-auto mb-12 text-center space-y-2 py-8">
+      <div className="max-w-4xl mx-auto mb-12 text-center space-y-2 pb-2">
         <h2 className="text-3xl text-pink-600 font-bold  text-center">testimoni</h2>
         <p className="md:text-lg text-sm text-gray-600">
         Apa kata mereka:
         </p>
       </div>
 
-      <div className="grid-cols-1 md:grid-cols-3 grid gap-8 md:gap-12 max-w-4xl mx-auto pb-12">  
+      <div className="grid-cols-1 md:grid-cols-3 grid gap-8 md:gap-6 max-w-4xl mx-auto pb-12">  
         {client.testimonies.map(item => (
-          <div key={item.title} className="text-center shadow p-4 rounded-3xl">
-            <div className="font-bold text-gray-800 uppercase">
+          <div key={item.title} className="text-left border p-4 rounded-xl">
+            <div className="font-bold text-gray-700 hover:text-gray-900 uppercase">
               {item.title}
             </div>
-            <div className="mt-3 text-sm text-gray-600 leading-tight">{item.content}</div>
+            <div className="mt-2 text-sm text-gray-600 hover:text-gray-900 leading-tight">{item.content}</div>
           </div>
         ))}
       </div>
