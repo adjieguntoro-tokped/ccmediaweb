@@ -12,6 +12,7 @@ import Portofolio from '../components/Portofolio';
 import OurClient from '../components/OurClient';
 import ContanctUs from '../components/ContactUs';
 import Footer from '../components/Footer';
+import Headlines from '../components/Headlines';
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Banner />
+        {/* <Banner /> */}
+        <Headlines />
         <Element name="about">
           <AboutUs />
         </Element>

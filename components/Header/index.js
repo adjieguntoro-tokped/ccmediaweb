@@ -23,7 +23,7 @@ export default function Example() {
   const aboutSection = {onClick: () => {}};
 
   return (
-    <Disclosure as="nav" className="bg-gray-900 fixed z-40 w-full">
+    <Disclosure as="nav" className="bg-gray-900 bg-opacity-50 fixed z-40 w-full">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
