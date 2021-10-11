@@ -7,7 +7,7 @@ const Form = () => {
     const [messages, setMessages] = useState('');
 
     const handleClickSubmit = () => {
-        window.location.assign(`https://wa.me/+6285274793033?text=Hi ccmedia, ${name ? `saya ${name}` : ''}, ${messages}`);
+        window.location.assign(`https://wa.me/+6281313135991?text=Hi ccmedia, ${name ? `saya ${name}` : ''}, ${messages}`);
     }
 
     return (
@@ -70,7 +70,7 @@ const ContanctUs = () => (
                                 <div className="flex gap-2 jsutify-start">
                                     <PhoneIcon className="w-6 md:w-8 text-gray-100" />
                                     <span className="my-4 text-xs md:text-sm">
-                                        +62 8527 4793033
+                                        +62 813 1313 5991
                                     </span>
                                 </div>
                                 <div className="flex gap-2 jsutify-start">
