@@ -66,7 +66,6 @@ const OurServices = () => (
                   <li>Flyer</li>
                   <li>Banner</li>
                   <li>Poster</li>
-                  <li>Anodize plate Company Photo Photo product</li>
                 </ul>
               </div>
             </div>
