@@ -49,7 +49,7 @@ const SlideHeadlines = () => (
     <div className="text-left p-2 max-w-2lg">
       <h1 className="md:text-center text-4xl tracking-tight font-extrabold text-gray-100 sm:text-5xl md:text-6xl">
         <span className="inline">Our{' '}</span>
-        <span className="text-pink-600 inline">Misson</span>
+        <span className="text-pink-600 inline">Mission</span>
       </h1>
       <div className="max-w-sm md:max-w-xl mx-auto">
         <p className="mt-3 sm:text-left md:text-center text-gray-300 text-sm md:max-w-3xl mx-auto w-full md:px-12 md:py-4 md:text-lg">
